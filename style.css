@@ -1,0 +1,164 @@
+:root {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  font-family: DM Sans;
+  color: white;
+}
+body {
+  background-color: hsl(27, 66%, 92%);
+  font-size: 1.6rem;
+}
+.container {
+  width: 90%;
+  margin: 4.5em auto;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(10, 79%, 65%);
+  padding: 1.3em 1.5em;
+  border-radius: 10px;
+}
+.header h3 {
+  font-size: 1.7rem;
+  padding-bottom: 0.3em;
+  font-weight: 400;
+}
+.chart-box {
+  border-radius: 10px;
+  margin-top: 1em;
+  background-color: white;
+  padding: 1.5em 1em;
+}
+.chart-box h1 {
+  color: black;
+  font-size: 2.5rem;
+}
+
+.box h3 {
+  color: grey;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.box p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.text {
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-bottom: 10px;
+  background-color: hsl(25, 47%, 15%);
+}
+.day {
+  cursor: pointer;
+  width: 70%;
+  height: 40px;
+  margin: auto;
+  border-radius: 5px;
+  background-color: hsl(10, 79%, 65%);
+}
+.day1 {
+  /* outline: 1px solid black; */
+  width: 100%;
+  text-align: center;
+  position: relative;
+  height: 100%;
+}
+.charts {
+  height: 190px;
+  width: 100%px;
+  display: flex;
+  justify-content: space-between;
+}
+.box {
+  position: absolute;
+  bottom: 0;
+  height: auto;
+  width: 48px;
+}
+.hide
+{
+  display: none;
+}
+/* DAYS SIZING */
+.T {
+  height: 75px;
+}
+.W {
+  height: 130px;
+}
+.TH {
+  height: 68px;
+}
+.FR {
+  height: 55px;
+}
+.SAT
+{
+  height: 110px;
+
+}
+.SUN
+{
+  height: 60px;
+
+}
+/* Next */
+hr
+{
+  color:   hsl(27, 66%, 92%);
+  margin: 10% auto;
+}
+.footer
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 0%;
+}
+.footer h3,
+.footer h2
+{
+  color: black;
+}
+.footer h3
+{
+font-size: 1.5rem;
+font-weight: 400;
+color: grey;
+}
+.f-box h2
+{
+  padding-top: 0.2em;
+  font-size: 2.8rem;
+}
+.s-box
+{
+  text-align: end;
+}
+.s-box h2
+{
+  font-size: 1.5rem;
+}
+.blue
+{
+  background-color: skyblue;
+}
+/* DESKTOP */
+@media screen and (min-width: 376px) {
+  .container {
+    width: 90%;
+    max-width: 400px;
+    margin:8% auto;
+  }
+}

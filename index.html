@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="text1">
+          <h3>My balance</h3>
+          <h2>$921.48</h2>
+        </div>
+        <div class="logo">
+          <img src="./images/logo.svg" alt="" class="logo1" />
+        </div>
+      </div>
+      <!-- DAYS SECTION START -->
+      <div class="chart-box">
+        <h1>Spending - Last 7 days</h1>
+        <div class="charts">
+          <!-- MONDAY -->
+          <div class="day1">
+            <div class="box">
+              <div class="mon"></div>
+              <div class="text hide monday">
+                <p>$17.45</p>
+              </div>
+              <div  class="day M" onclick="per1()" onmouseover="dis1()" onmouseout="hid1()"></div>
+              <h3>mon</h3>
+            </div>
+          </div>
+          <!-- TUESDAY -->
+          <div class="day1">
+            <div class="box">
+              <div class="mon"></div>
+              <div class="text hide tuesday">
+                <p>$34.91</p>
+              </div>
+              <div onclick="per2()" onmouseover="dis2()" onmouseout="hid2()" class="day T"></div>
+              <h3>tue</h3>
+            </div>
+          </div>
+          <!-- WEDNESDAY -->
+          <div class="day1">
+            <div class="box">
+              <div class="mon"></div>
+              <div class="text hide wednesday">
+                <p>$52.36</p>
+              </div>
+              <div  onclick="per3()" onmouseover="dis3()" onmouseout="hid3()" class="day W"></div>
+              <h3>wed</h3>
+            </div>
+          </div>
+          <!-- THURSDAY -->
+          <div class="day1">
+            <div class="box">
+              <div class="mon"></div>
+              <div class="text hide thursday">
+                <p>$31.07</p>
+              </div>
+              <div   onclick="per4()" onmouseover="dis4()" onmouseout="hid4()" class="day TH"></div>
+              <h3>thu</h3>
+            </div>
+          </div>
+          <!-- FRIDAY -->
+          <div class="day1">
+            <div class="box">
+              <div class="mon"></div>
+              <div class="text hide friday">
+                <p>$23.39</p>
+              </div>
+              <div   onclick="per5()" onmouseover="dis5()" onmouseout="hid5()" class="day FR"></div>
+              <h3>fri</h3>
+            </div>
+          </div>
+          <!-- SATURDAY -->
+          <div class="day1">
+            <div class="box">
+              <div class="mon"></div>
+              <div class="text hide saturday">
+                <p>$43.28</p>
+              </div>
+              <div   onclick="per6()" onmouseover="dis6()" onmouseout="hid6()" class="day SAT"></div>
+              <h3>sat</h3>
+            </div>
+          </div>
+          <!-- SUNDAY -->
+          <div class="day1">
+            <div class="box">
+              <div class="mon"></div>
+              <div class="text hide sunday">
+                <p>$25.48</p>
+              </div>
+              <div  onclick="per7()" onmouseover="dis7()" onmouseout="hid7()" class="day SUN"></div>
+              <h3>sun</h3>
+            </div>
+          </div>
+        </div>
+        <!-- DAYS SECTION ENDS -->
+        <hr />
+        <div class="footer">
+          <div class="f-box">
+            <h3>Total this month</h3>
+            <h2>$478.33</h2>
+          </div>
+          <div class="s-box">
+            <h2>+2.4%</h2>
+            <h3>from last month</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
+
+<!-- 
+ 
+ 
+
+
+
+  Total this month
+  $478.33
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
